@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Trade Park - Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: green;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background-color: #817c7c;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: yellowgreen;
+        }
+
+        footer {
+            background-color: green;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #store-content {
+            padding-top: 30px;
+        }
+
+        h2 {
+            font-size: 30px;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+
+        .store-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            animation: slideIn 1s ease;
+        }
+
+        .store-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 55px;
+            transition: transform 0.3s ease;
+        }
+
+        .store-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .store-item img {
+            max-width: 100%;
+            height: 320px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .store-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .store-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .store-item p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .store-item a {
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .store-item a::after {
+            content: '\25B6';
+            position: absolute;
+            margin-left: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .store-item a:hover::after {
+            opacity: 1;
+            margin-left: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Welcome to World Trade Park
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Store content -->
+
+    <section id="store-content">
+        <h2>Our Stores</h2>
+        <div class="store-list">
+
+            <div class="store-item">
+                <img src="Zara.jpg" alt="Zara">
+                <h3>Zara</h3>
+                <p>Zara is a renowned fashion retailer offering the latest trends in clothing, footwear, and accessories
+                    for men, women, and children.</p>
+                <a href="store1.php">Explore More</a>
+            </div>
+
+            <div class="store-item">
+                <img src="Forest essentials.jpg" alt="Forest essentials">
+                <h3>Forest Essentials</h3>
+                <p>Forest Essentials is a renowned Indian luxury Ayurvedic beauty brand that specializes in creating
+                    skincare, haircare, and wellness products using traditional methods and natural ingredients. </p>
+                <a href="store2.php">Explore More</a>
+            </div>
+
+            <div class="store-item">
+                <img src="Mango.jpg" alt="Mango">
+                <h3>Mango</h3>
+                <p>Mango is a globally recognized fashion retailer known for its trendy and chic clothing, accessories,
+                    and footwear for both men and women.</p>
+                <a href="store3.php">Explore More</a>
+            </div>
+
+            <div class="store-item">
+                <img src="Puma.jpg" alt="Puma">
+                <h3>Puma</h3>
+                <p>Puma is a leading sports and lifestyle brand that offers a wide range of athletic footwear, apparel,
+                    and accessories for men, women, and children.</p>
+                <a href="store4.php">Explore More</a>
+            </div>
+
+            <div class="store-item">
+                <img src="Marks Spencer.jpg" alt="Marks and Spenser">
+                <h3>Marks and Spenser</h3>
+                <p>Marks and Spencer is a leading retailer offering high-quality clothing, home products, and food
+                    items.</p>
+                <a href="store5.php">Explore More</a>
+            </div>
+
+            <div class="store-item">
+                <img src="Cineplex.jpg" alt="Cineplex">
+                <h3>Cineplex</h3>
+                <p>Cineplex is a state-of-the-art movie theater offering the latest blockbuster movies, comfortable
+                    seating, and a premium cinematic experience.</p>
+                <a href="store6.php">Explore More</a>
+            </div>
+
+            <div class="store-item">
+                <img src="Armani.jpg" alt="Armani">
+                <h3>Armani</h3>
+                <p>Armani is a luxury fashion brand known for its sophisticated designs, high-quality materials, and
+                    timeless elegance .</p>
+                <a href="store7.php">Explore More</a>
+            </div>
+
+            <div class="store-item">
+                <img src="Cosmo.jpg" alt="Cosmo">
+                <h3>Cosmo</h3>
+                <p>Cosmo is a trendy cosmetics and beauty store offering a wide range of skincare, makeup, and hair care
+                    products. </p>
+                <a href="store8.php">Explore More</a>
+            </div>
+
+            <div class="store-item">
+                <img src="Sephora.jpg" alt="Sephora">
+                <h3>Sephora</h3>
+                <p>Sephora is a leading beauty retailer offering a diverse range of skincare, makeup, fragrance, and
+                    hair care products from top brands around the world .</p>
+                <a href="store9.php">Explore More</a>
+            </div>
+
+            <div class="store-item">
+                <img src="Grocery.jpg" alt="Grocery">
+                <h3>Grocery</h3>
+                <p>Grocery store offers a wide variety of fresh produce, packaged foods, household essentials, and
+                    specialty items to meet all your grocery needs .</p>
+                <a href="store10.php">Explore More</a>
+            </div>
+
+            <div class="store-item">
+                <img src="Kitchen-accessories.jpg" alt="Kitchen-accessories">
+                <h3>Kitchen accessories</h3>
+                <p>Kitchen Accessories store offers a wide range of high-quality kitchen tools, gadgets, and equipment
+                    to make cooking and food preparation easier and more efficient.</p>
+                <a href="store11.php">Explore More</a>
+            </div>
+
+            <div class="store-item">
+                <img src="Home & furniture.jpg" alt="Home & furniture">
+                <h3>Home & furniture</h3>
+                <p>Home & Furniture offers a wide selection of stylish and functional furniture and home decor items to
+                    help you create the perfect living space .</p>
+                <a href="store12.php">Explore More</a>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 World Trade Park. All rights reserved.
+    </footer>
+</body>
+
+</html>

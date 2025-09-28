@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Trade Park - Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: green;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background-color: #817c7c;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: yellowgreen;
+        }
+
+        footer {
+            background-color: green;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #events-content {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .event {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: inline-block;
+            width: 30%;
+            min-width: 300px;
+        }
+
+        .event:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .event h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .event:hover h3 {
+            color: green;
+        }
+
+        .event img {
+            width: 350px;
+            height: 320px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .event:hover img {
+            transform: scale(1.05);
+        }
+
+        .event p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        #offers-content {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .offer {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: inline-block;
+            width: 30%;
+            min-width: 300px;
+        }
+
+        .offer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .offer h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .offer:hover h3 {
+            color: green;
+        }
+
+        .offer img {
+            width: 350px;
+            height: 320px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .offer:hover img {
+            transform: scale(1.05);
+        }
+
+        .offer p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .event a,
+        .offer a {
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .event a:hover,
+        .offer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Welcome to World Trade Park
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Events content -->
+    <section id="events-content">
+        <h2>Upcoming Events</h2>
+        <div class="event">
+            <img src="Summer Fashion Show.jpg" alt="Event 1">
+            <h3>Summer Fashion Show</h3>
+            <p>Join us for an exclusive fashion show featuring the latest summer trends.</p>
+        </div>
+        <div class="event">
+            <img src="live music.jpg" alt="Event 2">
+            <h3>Live Music Night</h3>
+            <p>Enjoy a night of live music performances by talented local artists.</p>
+        </div>
+        <div class="event">
+            <img src="midnight madness sale.jpg" alt="Event 3">
+            <h3>Midnight Madness Sale</h3>
+            <p>Shop till you drop with amazing discounts and deals during our Midnight Madness Sale.</p>
+        </div>
+
+    </section>
+
+    <!-- Offers and Deals content -->
+    <section id="offers-content">
+        <h2>Special Offers and Deals</h2>
+        <div class="offer">
+            <img src="weekend sale.jpg" alt="Offer 1">
+            <h3>Weekend Sale</h3>
+            <p>Enjoy special discounts on selected items every weekend.</p>
+        </div>
+        <div class="offer">
+            <img src="happy hour.jpg" alt="Offer 2">
+            <h3>Happy Hour</h3>
+            <p>Get exclusive deals and offers during our Happy Hour event.</p>
+        </div>
+        <div class="offer">
+            <img src="Seasonal Clearance.jpg" alt="Offer 3">
+            <h3>Seasonal Clearance</h3>
+            <p>Don't miss out on huge discounts during our seasonal clearance sale.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        &copy; 2024 World Trade Park. All rights reserved.
+    </footer>
+</body>
+
+</html>

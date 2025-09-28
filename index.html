@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Trade Park - Home</title>
+    <style>
+           body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: green;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background-color: #817c7c;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: yellowgreen;
+        }
+
+        #mallText {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 4s steps(40) 1s forwards;
+        }
+
+        section {
+            padding: 30px 20px 50px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: scaleUp 1s ease;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .feature img {
+            width: 600px;
+            height: 350px;
+            border-radius: 8px;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature p {
+            max-width: 45%;
+            margin-left: 20px;
+        }
+
+        .explore-button {
+            background-color: #ff8c00;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .explore-button:hover {
+            background-color: rgb(242, 49, 15);
+        }
+
+        .explore-button .arrow {
+            display: inline-block;
+            margin-left: 10px;
+            animation: arrowBlink 1s infinite;
+        }
+
+        @keyframes arrowBlink {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        footer {
+            background-color: green;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        /*Media Query for small screens*/
+
+        @media screen and (max-width: 768px) {
+           /* nav ul {
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #444;
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            nav.active ul {
+                display: flex;
+            }
+
+            nav ul li {
+                display: block;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            nav ul li:last-child {
+                margin-bottom: 0;
+            }
+            
+
+            section {
+                padding-top: 60px;
+            }
+            */
+
+            .feature {
+                flex-direction: column;
+            }
+
+            .feature img,
+            .feature p {
+                max-width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Welcome to World Trade Park
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="fadeInUp">
+        <h2>Welcome to World Trade Park</h2>
+        <p id="mallText">Welcome to World Trade Park, your one-stop destination for shopping, dining, and entertainment!</p>
+    </section>
+
+    <!--Home Section content-->
+
+    <section id="store" class="fadeInUp">
+        <div class="feature">
+            <img src="Store.avif" alt="Store">
+            <p>Explore our diverse selection of stores offering fashion, electronics, accessories, and more.</p>
+            <a href="store.html" class="explore-button">Explore <span class="arrow">&#9658;</span></a>
+        </div>
+    </section>
+    <section id="events" class="fadeInUp">
+        <div class="feature">
+            <img src="Event.jpg" alt="Events Calendar">
+            <p>Stay updated on exciting events such as sales, promotions, and special performances happening in the
+                mall.</p>
+            <a href="events.html" class="explore-button">Explore <span class="arrow">&#9658;</span></a>
+        </div>
+    </section>
+    <section id="dining" class="fadeInUp">
+        <div class="feature">
+            <img src="dining.jpg" alt="Dining Options">
+            <p>Indulge in delicious cuisines from our diverse selection of restaurants, cafes, and food courts.</p>
+            <a href="dining.html" class="explore-button">Explore <span class="arrow">&#9658;</span></a>
+        </div>
+    </section>
+    <section id="services" class="fadeInUp">
+        <div class="feature">
+            <img src="service.jpg" alt="Services & Amenities">
+            <p>Enjoy convenient amenities and services including Wi-Fi, ATMs, parking, and customer assistance.</p>
+            <a href="services.html" class="explore-button">Explore <span class="arrow">&#9658;</span></a>
+        </div>
+    </section>
+    <section id="contact" class="fadeInUp">
+        <div class="feature">
+            <img src="feedback.jpg" alt="Feedback">
+            <p>Have questions or feedback? Get in touch with us via phone, email, or visit our customer service desk.
+            </p>
+            <a href="contact.html" class="explore-button">Explore <span class="arrow">&#9658;</span></a>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 World Trade Park. All rights reserved.
+    </footer>
+</body>
+
+</html>
